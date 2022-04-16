@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Crypto Coin & Token Quotes</h1>
+    <form action="#" method="GET" class="css-search-form js-form">
+      <section class="search-section">
+        <button class="js-search" id="js-search" type="submit" value="search">
+          Search
+        </button>
+        <input
+        type="text"
+        name="userInput"
+        class="js-cryptoInputField"
+        placeholder="Enter Crypto Name"
+      />
+      <p class = "input-field-note">Leave field blank to see All</p>
+      </section>
+    </form>
+    <section class="css-crypto-container">
+      <table style="width: 100%;">
+        <thead class="js-quote-thead thead-visibility">
+        <tr class="quote-table">
+          <th>Name</th>
+          <th>Symbol</th>
+          <th>Current Price (USD)</th>
+          <th>% +/- 200 Day Moving Avg</th>
+        </tr>
+      </thead>
+      <tbody class="js-quote-tbody"></tbody>
+      </table>
+    </section>
+    <script src="cryptoQuote.js"></script>
+  </body>
+</html>
